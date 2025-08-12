@@ -1,0 +1,60 @@
+body{
+    font-family: "roboto";
+    
+    color: white;
+}
+header{
+    display:flex;
+    align-items: center;
+    justify-content: space-around;
+
+
+}
+button{
+    height: auto;
+     width: 100px;
+     background-color: white; 
+     color: black;
+     margin: 8px;
+     padding-top: 8px;
+     padding-bottom: 8px;
+}
+img{
+   
+     border-radius: 10%;
+
+   width: 500px;
+   height: 500px;
+   animation-name: spin;
+    animation-duration: 3s;
+    animation-iteration-count: 4;
+    animation-delay: 1s;
+    animation-direction:alternate;
+    animation-play-state: running;
+    animation-timing-function: linear;
+   
+}
+.img:hover{
+    animation-play-state: paused;
+
+}
+@keyframes spin{
+    0%{
+        transform: rotate(50deg);
+    }
+    50%{
+        
+        transform:scale(1.2);
+    }
+    100%{
+        border-radius: 50%;
+        font-size: 0.5rem;
+        transform: translate(200px);
+    }
+    
+}
+footer{
+    display:flex;
+    align-items: center;
+    justify-content: space-around;
+}
